@@ -1,0 +1,19 @@
+{
+  "name": "instaphone",
+  "version": "1.0.0",
+  "description": "A pure-frontend, single-page Twilio Voice softphone. No backend server required — access tokens are minted **in your browser** using your own Twilio API credentials.",
+  "main": "app.js",
+  "scripts": {
+    "verify-token": "node scripts/verify-token.mjs",
+    "diff-token": "node scripts/diff-official-sdk.mjs",
+    "test": "node scripts/verify-token.mjs && node scripts/diff-official-sdk.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.3",
+    "twilio": "^6.3.1"
+  }
+}
